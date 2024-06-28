@@ -3,6 +3,8 @@
 
 /public/build
 /public/hot
+/public/avatars
+/public/media
 /public/storage
 /storage/*.key
 /storage/debugbar
