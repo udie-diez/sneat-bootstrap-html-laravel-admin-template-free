@@ -8,18 +8,18 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class ContactPerson extends Model
 {
-  use HasFactory, SoftDeletes;
+    use HasFactory, SoftDeletes;
 
-  protected $fillable = [
-    'name',
-    'slug',
-    'email',
-    'phone',
-    'job_position_id',
-  ];
+    protected $fillable = [
+        'name',
+        'slug',
+        'email',
+        'phone',
+        'job_position_id',
+    ];
 
-  public function jobPosition()
-  {
-    return $this->belongsTo(JobPosition::class);
-  }
+    public function jobPosition()
+    {
+        return $this->belongsTo(JobPosition::class);
+    }
 }
